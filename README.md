@@ -35,10 +35,40 @@ Google Chrome and/or Mozilla Firefox
 
 ** The test suite supports both Chrome and Firefox. You can configure the browser in the DriverFactory.java file or pass it as an environment variable.
 
-Running Tests
+### ** Steps to Run the Tests**
+
+#### Option 1: Run with Maven (default)
+
+This will execute the test suite using the default browser specified in `DriverFactory.java`:
+
 ```bash
-mvn test
-```
+mvn clean test
+
+#### Option 2: Run with Specific Browser
+
+You can override the browser setting by passing an environment variable before running Maven:
+
+```bash
+BROWSER=chrome mvn clean test
+
+or
+
+```bash
+BROWSER=firefox mvn clean test
+
+This allows switching between browsers without modifying any code.
+
+#### Option 3: Run on Selenium Grid
+
+First, download the Selenium Server standalone JAR from the [official Selenium page](https://www.selenium.dev/downloads/), then start the grid:
+
+```bash
+java -jar selenium-server-<version>.jar standalone
+
+After that, you can run your tests remotely by setting the grid URL and desired browser:
+
+```bash
+GRID_URL=http://localhost:4444 BROWSER=firefox mvn clean test
 
 ## Dependencies
 All dependencies are managed via Maven. Relevant libraries include:
