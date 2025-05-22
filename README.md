@@ -3,7 +3,7 @@
 ## Project Goal
 This project automates the testing of a web table management interface located at demoqa.com/webtables. The system supports key operations such as adding, editing, deleting, and searching employee records. The purpose of the automation suite is to ensure the reliability of these core functionalities using Selenium WebDriver and Java.
 
-##Features & Test Scenarios
+## Features & Test Scenarios
 This automated test suite covers the following scenarios:
 
 1- Add Record Test — Adds a new employee and verifies its presence in the table.
@@ -36,8 +36,9 @@ Google Chrome and/or Mozilla Firefox
 ** The test suite supports both Chrome and Firefox. You can configure the browser in the DriverFactory.java file or pass it as an environment variable.
 
 Running Tests
-bash
+```bash
 mvn test
+```
 
 ## Dependencies
 All dependencies are managed via Maven. Relevant libraries include:
