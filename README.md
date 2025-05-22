@@ -43,6 +43,7 @@ This will execute the test suite using the default browser specified in `DriverF
 
 ```bash
 mvn clean test
+```
 
 #### Option 2: Run with Specific Browser
 
@@ -50,11 +51,13 @@ You can override the browser setting by passing an environment variable before r
 
 ```bash
 BROWSER=chrome mvn clean test
+```
 
 or
 
 ```bash
 BROWSER=firefox mvn clean test
+```
 
 This allows switching between browsers without modifying any code.
 
@@ -64,11 +67,13 @@ First, download the Selenium Server standalone JAR from the [official Selenium p
 
 ```bash
 java -jar selenium-server-<version>.jar standalone
+```
 
 After that, you can run your tests remotely by setting the grid URL and desired browser:
 
 ```bash
 GRID_URL=http://localhost:4444 BROWSER=firefox mvn clean test
+```
 
 ## Dependencies
 All dependencies are managed via Maven. Relevant libraries include:
