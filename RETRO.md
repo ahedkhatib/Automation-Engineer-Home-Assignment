@@ -9,7 +9,7 @@
 
 * I configured tests to run locally and remotely using a GRID_URL environment variable, which made it easy to switch between local runs and Selenium Grid execution.
 
-*I reused common values by defining constants, which improved code readability and reduced duplication.
+* I reused common values by defining constants, which improved code readability and reduced duplication.
 
 
 ## What Was Challenging
