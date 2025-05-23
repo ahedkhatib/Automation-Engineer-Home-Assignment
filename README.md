@@ -66,7 +66,7 @@ This allows switching between browsers without modifying any code.
 First, download the Selenium Server standalone JAR from the [official Selenium page](https://www.selenium.dev/downloads/), then start the grid:
 
 ```bash
-java -jar selenium-server-<version>.jar standalone
+java -jar uiTest-server-<version>.jar standalone
 ```
 
 After that, you can run your tests remotely by setting the grid URL and desired browser:
@@ -78,7 +78,7 @@ GRID_URL=http://localhost:4444 BROWSER=firefox mvn clean test
 ## Dependencies
 All dependencies are managed via Maven. Relevant libraries include:
 
-selenium-java: 4.27.0
+uiTest-java: 4.27.0
 
 junit-jupiter-engine: 5.9.0
 

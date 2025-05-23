@@ -1,4 +1,4 @@
-package selenium;
+package uiTest;
 
 import org.example.RegistrationFormPage;
 import org.example.WebTablesPage;
