@@ -66,7 +66,7 @@ This allows switching between browsers without modifying any code.
 First, download the Selenium Server standalone JAR from the [official Selenium page](https://www.selenium.dev/downloads/), then start the grid:
 
 ```bash
-java -jar uiTest-server-<version>.jar standalone
+java -jar selenium-server-<version>.jar standalone
 ```
 
 After that, you can run your tests remotely by setting the grid URL and desired browser:
