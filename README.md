@@ -78,7 +78,7 @@ GRID_URL=http://localhost:4444 BROWSER=firefox mvn clean test
 ## Dependencies
 All dependencies are managed via Maven. Relevant libraries include:
 
-uiTest-java: 4.27.0
+selenium-java: 4.27.0
 
 junit-jupiter-engine: 5.9.0
 
