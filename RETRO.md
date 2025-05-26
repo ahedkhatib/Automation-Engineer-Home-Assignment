@@ -24,6 +24,6 @@ I learned how to use JavaScriptExecutor to scroll and click elements in Selenium
 
 ## Future Enhancements
 * CI/CD Allure Report Integration: Improve the CI/CD workflow by integrating Allure reporting directly into GitHub Actions. This would allow automatic generation and sharing of test reports after each run.
-Note: Currently, Allure reports are generated locally only and are not yet part of the GitHub Actions workflow.
+- Note: Currently, Allure reports are generated locally only and are not yet part of the GitHub Actions workflow.
 
 * Expand Testing Scope: Add more edge case and negative test scenarios to simulate unexpected or invalid user actions.
