@@ -131,3 +131,18 @@ A test report is also available in **GitHub Actions** under the **UI testing** w
 You can view it in the **Actions** tab of the repository after each test run.
 
 [GitHub Actions - UI testing workflow](https://github.com/ahedkhatib/Automation-Engineer-Home-Assignment/actions)
+
+## Viewing Test Results with Allure
+
+To visualize your test results using Allure:
+
+1. **Install Allure** (if not already installed):  
+   Follow the setup guide here → [https://allurereport.org/docs/install/](https://allurereport.org/docs/install/)
+
+2. **Generate and open the report** by running the following command after your tests complete:
+
+```bash
+allure serve
+```
+
+This will create a clean HTML report and open it automatically in your default browser.
