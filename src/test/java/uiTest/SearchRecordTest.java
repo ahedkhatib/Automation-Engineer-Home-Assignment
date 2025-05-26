@@ -27,11 +27,6 @@ public class SearchRecordTest {
         driver.get(BASE_URL);
     }
 
-    @AfterEach
-    public void tearDown() {
-        driver.quit();
-    }
-
     private List<String> search(String keyword) {
         return new WebTablesPage(driver)
                 .searchByKeyword(keyword)
@@ -172,6 +167,11 @@ public class SearchRecordTest {
     public void testSearchWithSpaces() {
         List<String> results = search("  " + NAME_CIERRA + "  ");
         assertEquals(0, results.size());
+    }
+
+    @AfterEach
+    public void tearDown() {
+        driver.quit();
     }
 }
 
