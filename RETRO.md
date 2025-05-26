@@ -22,5 +22,8 @@
 I learned how to use JavaScriptExecutor to scroll and click elements in Selenium, which was useful when standard .click() didn’t work due to ads or hidden elements.
 
 
-## What Could Be Improved
-Connect the test suite to CI/CD with GitHub Actions
+## Future Enhancements
+CI/CD Allure Report Integration: Improve the CI/CD workflow by integrating Allure reporting directly into GitHub Actions. This would allow automatic generation and sharing of test reports after each run.
+* Note: Currently, Allure reports are generated locally only and are not yet part of the GitHub Actions workflow.
+
+Expand Testing Scope: Add more edge case and negative test scenarios to simulate unexpected or invalid user actions.
