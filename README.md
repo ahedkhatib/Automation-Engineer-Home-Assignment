@@ -25,6 +25,34 @@ Automation Tool: Selenium WebDriver
 
 Browser: Chrome / Firefox
 
+## Installation & Execution Steps
+
+Follow these simple steps to set up and run the test suite for this project, even if you're not a developer:
+
+### 1. Clone the Repository
+
+Open your terminal or command prompt and run:
+
+```bash
+git clone https://github.com/ahedkhatib/Automation-Engineer-Home-Assignment.git
+cd Automation-Engineer-Home-Assignment
+```
+
+### 2. Install Dependencies
+
+Use Maven to download and install all necessary libraries:
+
+```bash
+mvn clean install
+```
+
+### 3. Set Up Chrome or Firefox
+
+- If you're using **Google Chrome**: Download ChromeDriver from [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
+- If you're using **Mozilla Firefox**: Download Firefox from [https://www.mozilla.org/en-US/firefox/new/](https://www.mozilla.org/en-US/firefox/new/)
+
+Make sure the driver is added to your system's **PATH** or placed in the project root directory.
+
 ## How to Run Tests
 ## Prerequisites
 Java 21
@@ -84,6 +112,22 @@ junit-jupiter-engine: 5.9.0
 
 These are declared in the pom.xml file.
 
+## Test Suites
+
+- **Test suite for [Add a New Employee Record](https://docs.google.com/spreadsheets/d/1X9aiRBHGTIJhJaTmLXAabWVwY2EG4KApkRJcGIguG-s/edit#gid=0)**  
+  This suite verifies that a new employee can be added and appears correctly in the web table.
+
+- **Test suite for [Delete a Record](https://docs.google.com/spreadsheets/d/1YqfZT-OUPsxhgEQNfBK84jXJw20cbswqXDwEWpX6Rt0/edit#gid=0)**  
+  This suite verifies that a deleted employee record is no longer displayed in the table.
+
+- **Test suite for [Edit a Record’s Salary](https://docs.google.com/spreadsheets/d/1AEaxAQnwae4QNWixamdKRVSezYKPqCjC1lq9zRYr0a0/edit#gid=0)**  
+  This suite verifies that updating the salary of an existing employee is correctly reflected in the table.
+
 ## Test Reports
 A total of 48 automated tests were implemented and executed successfully. 
 All tests passed, confirming that the core functionalities of the web table interface work as expected.
+
+A test report is also available in **GitHub Actions** under the **UI testing** workflow.  
+You can view it in the **Actions** tab of the repository after each test run.
+
+[GitHub Actions - UI testing workflow](https://github.com/ahedkhatib/Automation-Engineer-Home-Assignment/actions)
